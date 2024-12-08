@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif; 
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  margin: 50px; 
+
+}
+
+img {
+  width: 300px; 
+  height: auto; 
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  width: 80%; 
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none; 
+  transition: background 0.3s ease;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background: blue; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]:focus {
+  background: #ccc; 
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: #4a90e2; 
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  background: #4a90e2; 
+}
